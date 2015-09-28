@@ -6,7 +6,7 @@ FILE_RPM="/tmp/atom.rpm"
 URL_RPM="https://atom.io/download/rpm"
 #DEB
 FILE_DEB="/tmp/atom.deb"
-URL_DEB="https://atom.io/download/rpm"
+URL_DEB="https://atom.io/download/deb"
 
 ### Variables ###
 DIST=""
