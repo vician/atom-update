@@ -8,4 +8,8 @@ If you will confirm installation or update then it will download a package from 
 
 The script can handle debian based and Red Hat based distribution.
 
-Running on debian isn't well tested, so please let me know if you will discover any problem.
+Requriements:
+* curl
+
+Usage:
+`./atom-update.sh`

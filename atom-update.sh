@@ -28,7 +28,6 @@ FILE=${!FILE_NAME}
 which atom 1>/dev/null 2>/dev/null
 if [ $? -ne 0 ]; then
   echo "WARNING: atom isn't installed. Do you want to install it (from official repository)?"
-  #@TODO
 else
   # Detect current installed version
   rpm -qa  | grep "^atom-" 1>/dev/null 2>/dev/null
@@ -52,7 +51,7 @@ read -p "Continue (y/n)?" choice
 case "$choice" in
   y|Y ) ;;
   n|N ) exit 0;;
-  * ) echo "Invalid ansewer."; 0;
+  * ) echo "Invalid answer."; 0;
 esac
 
 TEMP=$(mktemp /tmp/output.XXXXXXXXXX) || { echo "Failed to create temp file"; exit 1; }
