@@ -1,6 +1,6 @@
 # Update program without official repo via http(s)
 
-# atom-update
+## atom-update
 Simple script for update or install atom (https://atom.io/)
 
 This script will check if you have installed atom and which version is installed.
@@ -20,7 +20,7 @@ Supported OS:
 * Debian-based
 * RedHat-based
 
-# gitkraken-update
+## gitkraken-update
 
 Simple script for update or install gitkraken (http://gitkraken.com).
 
