@@ -29,6 +29,12 @@ which atom 1>/dev/null 2>/dev/null
 if [ $? -ne 0 ]; then
   echo "WARNING: atom isn't installed. Do you want to install it (from official repository)?"
 else
+	which rpm 1>/dev/null 2>/dev/null
+	if [ $? -ne 0 ]; then
+		echo "ERROR: You don't have rpm installed. Please install it first for checking your local version of atom."
+		echo "sudo aptitude install rpm"
+		exit 0
+	fi
   # Detect current installed version
   rpm -qa  | grep "^atom-" 1>/dev/null 2>/dev/null
   if [ $? -ne 0 ]; then
